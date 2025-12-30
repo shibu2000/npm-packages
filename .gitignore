@@ -1,0 +1,5 @@
+# Node dependencies (ignore everywhere)
+node_modules/
+
+# Lock file (ignore everywhere)
+package-lock.json
