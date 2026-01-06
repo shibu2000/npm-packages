@@ -1,0 +1,36 @@
+{
+  "name": "react-compact-pagination",
+  "version": "0.1.0",
+  "description": "A lightweight, windowed pagination component for React",
+  "keywords": [
+    "react",
+    "pagination",
+    "nextjs",
+    "page-navigation",
+    "ui"
+  ],
+  "author": "Shibu Dhara",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
