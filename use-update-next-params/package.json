@@ -1,6 +1,6 @@
 {
   "name": "use-update-next-params",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom hook to update URL search params in Next.js App Router",
   "license": "MIT",
   "type": "module",

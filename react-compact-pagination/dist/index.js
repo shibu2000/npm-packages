@@ -18,17 +18,11 @@ var __copyProps = (to, from, except, desc) => {
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/index.ts
-var index_exports = {};
-__export(index_exports, {
+var src_exports = {};
+__export(src_exports, {
   ReactCompactPagination: () => ReactCompactPagination
 });
-module.exports = __toCommonJS(index_exports);
-
-// utils/cn.ts
-function cn(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-var cn_default = cn;
+module.exports = __toCommonJS(src_exports);
 
 // src/PageNavigator.tsx
 var import_jsx_runtime = require("react/jsx-runtime");
@@ -63,16 +57,13 @@ var ReactCompactPagination = ({
       onPageChange(page);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "inline-flex items-center gap-1 p-1  text-sm rounded-[var(--radius)]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "rcp-container", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "rcp-wrapper", children: [
     /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
       "button",
       {
         onClick: () => handlePageChange(currentPage - 1),
         disabled: currentPage === 1,
-        className: cn_default(
-          "p-2 rounded-md hover:bg-white hover:text-black cursor-pointer",
-          currentPage === 1 && "opacity-50 cursor-not-allowed"
-        ),
+        className: `rcp-btn ${currentPage === 1 ? "rcp-disabled" : ""}`,
         children: prevLabel
       }
     ),
@@ -80,10 +71,7 @@ var ReactCompactPagination = ({
       "button",
       {
         onClick: () => handlePageChange(page),
-        className: cn_default(
-          "px-3 py-2 rounded-md cursor-pointer",
-          page === currentPage && "bg-primary text-white"
-        ),
+        className: `rcp-page-btn ${page === currentPage ? "rcp-active" : ""}`,
         children: page
       },
       page
@@ -93,10 +81,7 @@ var ReactCompactPagination = ({
       {
         onClick: () => handlePageChange(currentPage + 1),
         disabled: currentPage === totalPages,
-        className: cn_default(
-          "p-2 rounded-md hover:bg-white hover:text-black cursor-pointer",
-          currentPage === totalPages && "opacity-50 cursor-not-allowed"
-        ),
+        className: `rcp-btn ${currentPage === totalPages ? "rcp-disabled" : ""}`,
         children: nextLabel
       }
     )

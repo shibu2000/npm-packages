@@ -1,0 +1,53 @@
+/* flex justify-center */
+.rcp-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* inline-flex items-center gap-1 p-1 text-sm rounded-[var(--radius)] */
+.rcp-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem; /* gap-1 */
+  padding: 0.25rem; /* p-1 */
+  font-size: 0.875rem; /* text-sm */
+  border-radius: var(--radius);
+}
+
+/* p-2 rounded-md cursor-pointer */
+.rcp-btn {
+  padding: 0.5rem; /* p-2 */
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/* px-3 py-2 rounded-md cursor-pointer */
+.rcp-page-btn {
+  padding: 0.5rem 0.75rem; /* py-2 px-3 */
+  border-radius: 0.375rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/* hover:bg-white hover:text-black */
+.rcp-btn:hover,
+.rcp-page-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* bg-primary text-white */
+.rcp-active {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* opacity-50 cursor-not-allowed */
+.rcp-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

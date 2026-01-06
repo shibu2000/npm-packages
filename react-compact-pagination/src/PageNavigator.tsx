@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import cn from "../utils/cn";
 
 export interface ReactCompactPaginationProps {
   totalPages: number;
@@ -47,15 +46,12 @@ export const ReactCompactPagination = ({
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="inline-flex items-center gap-1 p-1  text-sm rounded-[var(--radius)]">
+    <div className="rcp-container">
+      <div className="rcp-wrapper">
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className={cn(
-            "p-2 rounded-md hover:bg-white hover:text-black cursor-pointer",
-            currentPage === 1 && "opacity-50 cursor-not-allowed"
-          )}
+          className={`rcp-btn ${currentPage === 1 ? "rcp-disabled" : ""}`}
         >
           {prevLabel}
         </button>
@@ -64,10 +60,9 @@ export const ReactCompactPagination = ({
           <button
             key={page}
             onClick={() => handlePageChange(page)}
-            className={cn(
-              "px-3 py-2 rounded-md cursor-pointer",
-              page === currentPage && "bg-primary text-white"
-            )}
+            className={`rcp-page-btn ${
+              page === currentPage ? "rcp-active" : ""
+            }`}
           >
             {page}
           </button>
@@ -76,10 +71,9 @@ export const ReactCompactPagination = ({
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className={cn(
-            "p-2 rounded-md hover:bg-white hover:text-black cursor-pointer",
-            currentPage === totalPages && "opacity-50 cursor-not-allowed"
-          )}
+          className={`rcp-btn ${
+            currentPage === totalPages ? "rcp-disabled" : ""
+          }`}
         >
           {nextLabel}
         </button>
