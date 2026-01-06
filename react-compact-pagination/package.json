@@ -1,6 +1,6 @@
 {
   "name": "react-compact-pagination",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "A lightweight, windowed pagination component for React",
   "keywords": [
     "react",
@@ -9,16 +9,29 @@
     "page-navigation",
     "ui"
   ],
-  "author": "Shibu Dhara",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shibu2000/npm-packages.git",
+    "directory": "react-compact-pagination"
+  },
+  "homepage": "https://github.com/shibu2000/npm-packages/tree/main/react-compact-pagination#readme",
+  "bugs": {
+    "url": "https://github.com/shibu2000/npm-packages/issues"
+  },
+  "author": {
+    "name": "Shibu Dhara",
+    "email": "shibudhara147@gmail.com",
+    "url": "https://github.com/shibu2000"
+  },
   "license": "MIT",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     },
     "./styles.css": "./dist/styles.css"
   },
