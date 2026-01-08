@@ -1,0 +1,60 @@
+{
+  "name": "next-unsaved-changes-guard",
+  "version": "1.0.0",
+  "description": "A lightweight, customizable React component for Next.js 13+ (App Router) that prevents users from accidentally leaving a page with unsaved changes.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shibu2000/npm-packages.git",
+    "directory": "next-unsaved-changes-guard"
+  },
+  "homepage": "https://github.com/shibu2000/npm-packages/tree/main/next-unsaved-changes-guard#readme",
+  "bugs": {
+    "url": "https://github.com/shibu2000/npm-packages/issues"
+  },
+  "author": {
+    "name": "Shibu Dhara",
+    "email": "shibudhara147@gmail.com",
+    "url": "https://github.com/shibu2000"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "next": ">=13",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "next": "^16.1.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "nextjs",
+    "next",
+    "nextjs-app-router",
+    "react",
+    "react-hook",
+    "custom-hook",
+    "url",
+    "query-params",
+    "search-params",
+    "routing",
+    "navigation",
+    "next-navigation"
+  ]
+}
