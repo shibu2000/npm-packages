@@ -19,6 +19,16 @@ A lightweight, customizable React component for Next.js 13+ (App Router) that pr
 > [!NOTE]
 > This package utilizes `next/navigation` which is exclusive to the **Next.js App Router**. It is **not** compatible with the legacy Pages Router (`pages/` directory).
 
+## Preview
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/shibu2000/npm-packages/main/screenshots/next-unsaved-changes-guard.png"
+    width="520"
+    alt="Next Unsaved Changes Guard dialog preview"
+  />
+</p>
+
 ## Installation
 
 ```bash
