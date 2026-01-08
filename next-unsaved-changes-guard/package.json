@@ -45,16 +45,20 @@
   },
   "keywords": [
     "nextjs",
-    "next",
-    "nextjs-app-router",
     "react",
-    "react-hook",
-    "custom-hook",
-    "url",
-    "query-params",
-    "search-params",
-    "routing",
-    "navigation",
-    "next-navigation"
+    "unsaved-changes",
+    "form-guard",
+    "route-guard",
+    "navigation-guard",
+    "prevent-navigation",
+    "beforeunload",
+    "nextjs-app-router",
+    "next-navigation",
+    "app-router",
+    "form-dirty",
+    "data-loss-prevention",
+    "modal",
+    "dialog",
+    "typescript"
   ]
 }
